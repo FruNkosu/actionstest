@@ -16,7 +16,13 @@ jobs:
           node -v
           ls -a
        - name: python command
-         run:
+         run: |
            import platform
            print(platform.processor())
          shell: python
+  run-Windows-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Directory
+        run: pwd
+        shell: bash
