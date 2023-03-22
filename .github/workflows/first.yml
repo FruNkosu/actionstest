@@ -25,6 +25,6 @@ jobs:
     needs: ["run-shell-commands"]
     steps:
       - name: Directory
-        run:
+        run: pwd
         shell: bash
 
